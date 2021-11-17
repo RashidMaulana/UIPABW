@@ -38,7 +38,7 @@ html::-webkit-scrollbar-thumb{
 }
 
 body{
-    background: var(--bg);
+    background-image: url(../Images/Background.jpg);
 }
 
 section{
@@ -50,11 +50,12 @@ section{
     color:#fff;
     text-transform: uppercase;
     padding-bottom: 3.5rem;
+    margin-top: 100px;
     font-size: 4rem;
 }
 
 .heading span{
-    color:var(--main-color);
+    color:black;
     text-transform: uppercase;
 }
 
@@ -206,39 +207,71 @@ section{
     text-align: center;
 }
 
-.home{
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    background:url(../images/Background.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
+.products .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem;
+    background: black;
 }
 
-.home .content{
-    max-width: 60rem;
+.products .box-container .box{
+    text-align: center;
+    border:black;
+    padding: 2rem;
 }
 
-.home .content h3{
-    font-size: 6rem;
-    text-transform: uppercase;
-    color: black;
-}
-
-.home .content p{
+.products .box-container .box .icons a{
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
     font-size: 2rem;
-    font-weight: bold;
-    line-height: 1.8;
-    padding:1rem 0;
-    color:#000;
+    border:var(--border);
+    color: var(--main-color);
+    margin:.3rem;
 }
 
+.products .box-container .box .icons a:hover{
+    background:white;
+}
 
+.products .box-container .box .image{
+    padding: 2.5rem 0;
+}
+
+.products .box-container .box .image img{
+    height: 25rem;
+}
+
+.products .box-container .box .content h3{
+    color:#fff;
+    font-size: 2.5rem;
+}
+
+.products .box-container .box .content .stars{
+    padding: 1.5rem;
+}
+
+.products .box-container .box .content .stars i{
+    font-size: 1.7rem;
+    color: white;
+}
+
+.products .box-container .box .content .price{
+    color:#fff;
+    font-size: 2.5rem;
+}
+
+.products .box-container .box .content .price span{
+    text-decoration: line-through;
+    font-weight: lighter;
+    font-size: 1.5rem;
+}
 
 
 .footer{
     background:var(--black);
     text-align: center;
+    margin-top: 300px;
 }
 
 
@@ -272,13 +305,6 @@ section{
 .footer .credit span{
     color:var(--main-color);
 }
-
-
-
-
-
-
-
 
 
 /* media queries  */

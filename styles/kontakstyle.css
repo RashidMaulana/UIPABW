@@ -38,7 +38,7 @@ html::-webkit-scrollbar-thumb{
 }
 
 body{
-    background: var(--bg);
+    background-image: url(../Images/Background.jpg);
 }
 
 section{
@@ -51,10 +51,11 @@ section{
     text-transform: uppercase;
     padding-bottom: 3.5rem;
     font-size: 4rem;
+    margin-top: 100px;
 }
 
 .heading span{
-    color:var(--main-color);
+    color:black;
     text-transform: uppercase;
 }
 
@@ -206,39 +207,59 @@ section{
     text-align: center;
 }
 
-.home{
-    min-height: 100vh;
+.kontak .row{
+    display: flex;
+    background:var(--black);
+    flex-wrap: wrap;
+    gap:1rem;
+}
+
+.kontak .row .map{
+    flex:1 1 45rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.kontak .row form{
+    flex:1 1 45rem;
+    padding:5rem 2rem;
+    text-align: center;
+}
+
+.kontak .row form h3{
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    color:#fff;
+}
+
+.kontak .row form .inputBox{
     display: flex;
     align-items: center;
-    background:url(../images/Background.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background:var(--bg);
+    border:var(--border);
 }
 
-.home .content{
-    max-width: 60rem;
-}
-
-.home .content h3{
-    font-size: 6rem;
-    text-transform: uppercase;
-    color: black;
-}
-
-.home .content p{
+.kontak .row form .inputBox span{
+    color:#fff;
     font-size: 2rem;
-    font-weight: bold;
-    line-height: 1.8;
-    padding:1rem 0;
-    color:#000;
+    padding-left: 2rem;
 }
 
-
-
+.kontak .row form .inputBox input{
+    width: 100%;
+    padding:2rem;
+    font-size: 1.7rem;
+    color:#fff;
+    text-transform: none;
+    background:none;
+}
 
 .footer{
     background:var(--black);
     text-align: center;
+    margin-top: 100px;
 }
 
 
@@ -272,14 +293,6 @@ section{
 .footer .credit span{
     color:var(--main-color);
 }
-
-
-
-
-
-
-
-
 
 /* media queries  */
 @media (max-width:991px){
