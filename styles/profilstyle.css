@@ -201,16 +201,45 @@ section{
     color:var(--main-color);
 }
 
+
+
 .header .cart-items-container .btn{
     width: 100%;
     text-align: center;
 }
 
-.footer{
-    background:var(--black);
+
+
+.profil {
+    color: black;
+    display: grid;
+    place-items: center;
+}
+
+.profil h1{
+    margin-top: 80px;
+    font-size: 50px;
+    color: white;
+}
+
+.profil .profil-items{
+    margin-top: 10px;
+    padding: 100px 100px 100px 100px;
+    background-color: white;
+    font-size: 50px;
     text-align: center;
 }
 
+.profil .profil-items img{
+    max-width: 150px;
+    height: auto;
+}
+
+.footer{
+    background:var(--black);
+    text-align: center;
+    margin-top: 200px;
+}
 
 
 .footer .links{

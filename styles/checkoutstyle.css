@@ -207,6 +207,69 @@ section{
     text-align: center;
 }
 
+
+.small-container{
+    color: white;
+    margin: 80px auto;
+    font-size: 30px;
+    width: 1500px;
+}
+
+.small-container img{
+    max-width: 80px;
+    max-height: 80px;
+    margin-right: 10px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th{
+    text-align: left;
+    padding: 5px;
+    color: black;
+    background: white;
+    font-weight: normal;
+}
+
+td{
+    padding: 10px 5px;
+    background: black;
+}
+
+td  input{
+    width: 100px;
+    height: 30px;
+    padding: 5px;
+    place-items: left;
+}
+
+td a{
+    color: red;
+    font-size: 30px;
+}
+
+.total-harga{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.total-harga table{
+    border-top: 10px solid red;
+    width: 100%;
+    max-width: 350px;
+}
+
+td:last-child{
+    text-align: right;
+}
+
+th:last-child{
+    text-align: right;
+}
+
 .footer{
     background:var(--black);
     text-align: center;
@@ -261,6 +324,10 @@ section{
         padding:2rem;
     }
 
+    .small-container table{
+        width: 991px;
+    }
+
 }
 
 @media (max-width:768px){
@@ -294,19 +361,6 @@ section{
         right: 2rem;
     }
 
-    .home{
-        background-position: left;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .home .content h3{
-        font-size: 4.5rem;
-    }
-
-    .home .content p{
-        font-size: 1.5rem;
-    }
 
 }
 
