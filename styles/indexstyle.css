@@ -109,6 +109,10 @@ section{
     margin-left: 2rem;
 }
 
+.header .cart-items-container #tombolbayar{
+    background-color: var(--main-color);
+}
+
 .header .icons div:hover{
     color:var(--main-color);
 }
