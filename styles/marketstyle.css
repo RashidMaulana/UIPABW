@@ -247,15 +247,6 @@ section{
     font-size: 2.5rem;
 }
 
-.products .box-container .box .content .stars{
-    padding: 1.5rem;
-}
-
-.products .box-container .box .content .stars i{
-    font-size: 1.7rem;
-    color: white;
-}
-
 .products .box-container .box .content .price{
     color:#fff;
     font-size: 2.5rem;
@@ -265,6 +256,31 @@ section{
     text-decoration: line-through;
     font-weight: lighter;
     font-size: 1.5rem;
+}
+
+.pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    place-items: center;
+    margin-top: 200px;
+    grid-column: 5;
+}
+
+.pagination a{
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    background-color: white;
+    padding: 5px;
+    color: black;
+}
+
+.pagination .hoverable:hover{
+    background-color: var(--main-color);
+    color: white;
+    border: 1px solid black;
 }
 
 

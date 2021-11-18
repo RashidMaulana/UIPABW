@@ -64,7 +64,7 @@ section{
     padding:.9rem 3rem;
     font-size: 1.7rem;
     color:#fff;
-    background: var(--main-color);
+    background: black;
     cursor: pointer;
 }
 
