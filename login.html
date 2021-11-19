@@ -10,20 +10,21 @@
        
         <h1>Login Koma</h1>
       </div>
-      <form action="#" method="POST" id="formlog">
+      <form method="post" id="formlog" enctype="multipart/form-data">
         <div class="title">
           <h2>Login</h2>
         </div>
-      <div class="info">
-        <input type="text" name="username" id="username" class="fname" placeholder="Username" required="">
-        <input type="password" name="password" id="password" placeholder="Password" required="">
-      </div>
-      <div>
-        <button name="login" type="submit" class="tombol">Login</button>
-      </div>
-      <p>Jika belum memiliki akun, klik <a target="_blank" href="index.html">Sign Up</a>.</p>
-      </div>
+        <div class="info">
+          <input type="text" name="username" id="username" class="fname" placeholder="Username" >
+          <input type="password" name="password" id="password" placeholder="Password">
+        </div>
+        <div>
+          <button type="submit" name="login"  class="tombol">Login</button>
+        </div>
+        <p>Jika belum memiliki akun, klik <a target="_blank" href="register.html">Sign Up</a>.</p>
+        </div>
     </form>
     </div>
+    <script src="js/login.js"></script>
   </body>
 </html>
