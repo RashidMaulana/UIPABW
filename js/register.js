@@ -8,25 +8,27 @@ const form = document.querySelector('#formreg');
     username = form.elements.username.value,
     password = form.elements.password.value,
     email = form.elements.email.value,
+    konfPass = form.elements.konfirmPass.value,
     notelp = form.elements.notelp.value,
     alamat = form.elements.alamat.value,
-    check(username, password, nama, email, alamat, notelp);
+    check(username, password, konfPass, nama, email, alamat, notelp);
 
     nama = '';
     username = '';
+    konfPass = '';
     password = '';
     email =  '';
     notelp = '';
     alamat ='';
 });
 
-const check = (username, password, nama, email, alamat, notelp) =>  {
+const check = (username, password, konfPass, nama, email, alamat, notelp) =>  {
     if (nama === '') {
         alert("nama tidak boleh kosong");
     }else if (username === '') {
         alert("username tidak boleh kosong");
-    }else if (password === '') {
-        alert("password tidak boleh kosong");
+    }else if (password === '' || password != konfPass) {
+        alert("Silahkan isi password dengan benar!");
     }else if (email === '') {
         alert("email tidak boleh kosong");
     }else if (notelp === '') {
@@ -35,7 +37,7 @@ const check = (username, password, nama, email, alamat, notelp) =>  {
         alert("alamat tidak boleh kosong");
     }else if(document.getElementById("cek").checked == false){
         alert("silahkan centang ketentuannya.");
-    } else{
+    }else{
         window.location.href='login.html';
     }
 }
